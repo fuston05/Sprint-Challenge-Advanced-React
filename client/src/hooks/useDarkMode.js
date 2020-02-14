@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 
-export const useDarkMode = (key, initialValue= false) => {
+const useDarkMode = (key, initialValue= false) => {
   const [dark, setDark]= useState( () => {
-    if( window.localStorage.getItem(dark) ){
-      return JSON.parse(window.getItem(dark));
+    if( window.localStorage.getItem(key) ){
+      return JSON.parse(window.localStorage.getItem(key));
     }else{
       return initialValue;
     }//end if
@@ -13,6 +13,7 @@ export const useDarkMode = (key, initialValue= false) => {
     setDark(value);
     window.localStorage.setItem(key, JSON.stringify(value));
   }
-
-  return [dark, setDark];
+  return [dark, storeValue];
 }
+
+export default useDarkMode;
