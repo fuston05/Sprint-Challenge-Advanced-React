@@ -23,9 +23,29 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit the `ANSWERS.md` file to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] Why would you use class component over function components (removing hooks from the question)?
+
+  You might use a class component over a function component if you find yourself working on an existing codebase that has already been written using class components. You might also use a class component for personal preference reasons like: being able to see state slayed out in an object form, or you might feel like you get more control over your component updates due to all of the different lifecycle methods that are available to a class component.
+
 - [ ] Name three lifecycle methods and their purposes.
+
+  1- componentDidMount:
+		This one is called after the page has rendered. This is where you would make any api calls from your app.
+
+	2-componentDidUpdate:
+		This one is called anytime your component updates, meaning any time there is a state change that requires a re-render.
+
+	3-componentWillUnmount:
+		This one is useful for destroying a component or ‘unmounting’, this is where you would do any clean up that might be needed. Such as clearing intervals, eventListeners etc…
+
 - [ ] What is the purpose of a custom hook?
+
+  The purpose of a custom hook is to allow for more efficient and dry code. This is achieved by allowing you to call on multiple hooks within a single custom hook. It allows us to extract component logic into reusable functions or hooks thus allowing more compartmentalization of our applications.
+
 - [ ] Why is it important to test our apps?
+
+
+	Testing is important because it allows us to have confidence in our application functionality by handling testing automatically. It also helps keep our code stable during bug fixes and updates to the code.
+
 
 ## Project Set Up
 
