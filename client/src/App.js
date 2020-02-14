@@ -5,7 +5,7 @@ import axios from 'axios';
 import Players from './components/Players/Players';
 
 //styles
-import './App.css';
+import './App.scss';
 
 function App() {
   // state
@@ -24,7 +24,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1> test</h1>
+      <h1>Player Information</h1>
       <Players data= {data} />
     </div>
   );
